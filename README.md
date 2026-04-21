@@ -9,15 +9,16 @@ This folder provides the **core model implementation** of **CFGFE** for pansharp
 
 ## What’s included
 
-- **Model code only** (no datasets / metrics / training / testing scripts):
-  - `cfgfe/models/CFGFE.py`
-  - `cfgfe/models/WDAM.py`
-  - `cfgfe/models/refine.py`
+- **Core code** (no datasets / metrics / full training / evaluation pipeline):
+  - `CFGFE_code/models/CFGFE.py`
+  - `CFGFE_code/models/WDAM.py`
+  - `CFGFE_code/models/refine.py`
+  - `CFGFE_code/train_CFGFE.py` (optional / may require external framework code)
 
 ## Quick import
 
 ```python
-from cfgfe.models import CFGFE
+from CFGFE_code.models import CFGFE
 
 model = CFGFE(num_channels=16)
 ```
